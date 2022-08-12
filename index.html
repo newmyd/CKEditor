@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor</title>
+    <script src="./ckeditor.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">CKEditor</h1>
+    <div id="editor"></div>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</body>
+</html>
